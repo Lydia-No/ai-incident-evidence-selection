@@ -1,1 +1,1 @@
-# Copied from the frozen Sprint2 release. See release provenance.
+"""Frozen synthetic case generator used in the initial sprint evaluation."""

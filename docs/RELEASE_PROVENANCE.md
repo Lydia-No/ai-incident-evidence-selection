@@ -1,9 +1,7 @@
 # Release provenance
 
-This repository is a curated public-release surface derived from the private sprint working repository. Files are copied from the frozen sprint experiment rather than exposing the working repository's history.
+This repository contains the frozen sprint implementation, evaluation materials, and incident evidence-request artifact used for the initial release.
 
-Frozen experiment branch: `gate5-frozen-experiment`
-
-The release preserves the investigator, synthetic experiment harness, verification material, and real-case evidence-request artifact used for the sprint result. Working notes, submission-control files, hostile-review material, unrelated research, and private repository history are intentionally excluded.
+The first public version is limited to material completed before the sprint submission and preserved at the initial freeze. Later research, revisions, and extensions are outside this release.
 
 Author: Linda Thorstensen

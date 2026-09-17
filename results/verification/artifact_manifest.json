@@ -1,0 +1,37 @@
+{
+  "audit_completed_utc": "2026-09-17T10:38:20Z",
+  "audit_started_utc": "2026-09-17T10:34:07Z",
+  "branch": "main",
+  "environment": {
+    "executable": "/usr/bin/python",
+    "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "experiment_version": "v0.1",
+  "frozen_commit": "f7c68a51ea4ccc1f58b3c0ac7d1079e0977c3ea9",
+  "generator_version": "v0.1",
+  "holdout": {
+    "case_count": 800,
+    "seeds": [26091301, 26091302, 26091303, 26091304, 26091305],
+    "strategy_count": 5,
+    "trace_record_count": 6321
+  },
+  "initial_worktree_clean": true,
+  "local_head_equals_origin_main": true,
+  "origin_main": "f7c68a51ea4ccc1f58b3c0ac7d1079e0977c3ea9",
+  "sha256": {
+    "dev_invariants.json": "e2e963114091443da982f4c564b78056a44cc00ea7d2f44397849bbb5cd2390c",
+    "dev_metrics.json": "c46ccb814aac14d6c9e9c08c98d1f4508bb04bb17d32fbe7476c28a9da76dd87",
+    "holdout_invariants.json": "572ae70aa174a6a4b130e7994286e5206182619dc1a19d92634879fae038b393",
+    "holdout_metrics.json": "b2217f61b79a2592290a1538b4aba38e00d264032d57f76d590dcfe90982d7d6",
+    "raw_dev_f7c68a51_20260917T103407Z.jsonl": "02195c55d358e2a0ac5d43f28ed6cc15ff93dbbc51342f29c90ded9b17853b38",
+    "raw_holdout_f7c68a51_20260917T103421Z.jsonl": "3c6818f6cbde34d007227b1ddccdb83b6fb4637571f4f0e0353e668093afa6bd",
+    "robustness_checks.py": "a247dbc907f33b2cae58a1fbd1d53ca9b223330c7a07e442a6827482879b1963",
+    "robustness_results.json": "0f8d55f496afb5af49d8130d0837dbcf2a50b45f2350dc39bf279902e9a9a706",
+    "source_and_tie_audit.py": "410e42662726ab2fa64dbe7477b4c9c949acbfbe398ae9b2ebf1f243db51b682",
+    "source_audit.json": "c981a202291aaebd4c49f12d09d463f12f122ce8f3ca18108f92b9747e431648",
+    "verification_report.md": "deada562a138533bb922c61de507c5e7f5010cdcac369cdb4505d90cd9b219e8",
+    "verify_frozen_trace.py": "487e0c22a0a0e912f46b9a41dc7668b2c9fd796969f23647273a284944a609a7"
+  },
+  "verdict": "PARTIAL"
+}

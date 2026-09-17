@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "explanation_order_reversal": 4000,
+    "explanation_renaming": 4000,
+    "probe_order_reversal": 4000
+  },
+  "holdout_cases_checked": 800,
+  "interpretation": "Candidate list presentation order may follow explanation input order; terminal states, selected causes, selected probes, evidence, observations, and costs are compared after ID normalization and set-like candidate normalization.",
+  "presentation_only_candidate_order_changes": 3000,
+  "scope": "post-freeze metamorphic verification; not new experimental evidence",
+  "strategies_checked": 5,
+  "substantive_failure_count": 0,
+  "substantive_failures": []
+}

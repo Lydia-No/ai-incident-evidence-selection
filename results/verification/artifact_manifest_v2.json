@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "created_utc": "2026-09-17T10:48:56Z",
+  "frozen_v01_commit": "f7c68a51ea4ccc1f58b3c0ac7d1079e0977c3ea9",
+  "origin_main_at_v01_audit": "f7c68a51ea4ccc1f58b3c0ac7d1079e0977c3ea9",
+  "supersedes_for_metadata_only": "artifact_manifest.json",
+  "original_v01_artifacts_finalized_utc": "2026-09-17T10:39:36.331991820Z",
+  "corrections": [
+    "The v1 manifest audit_completed_utc preceded the final original report and manifest writes.",
+    "The v2 timestamp records finalization of the original v0.1 audit artifact set, not a second HOLDOUT execution.",
+    "Original artifacts and hashes are retained unchanged."
+  ],
+  "execution_boundary": {
+    "v01_holdout_rerun_during_review": false,
+    "frozen_v01_source_modified": false,
+    "raw_dev_modified": false,
+    "raw_holdout_modified": false
+  },
+  "original_artifact_sha256": {
+    "artifact_manifest.json": "5c64739e940b52d28099b5c2975a782aee5739e74f4ab8b3a4a70b508eb109ca",
+    "dev_invariants.json": "e2e963114091443da982f4c564b78056a44cc00ea7d2f44397849bbb5cd2390c",
+    "dev_metrics.json": "c46ccb814aac14d6c9e9c08c98d1f4508bb04bb17d32fbe7476c28a9da76dd87",
+    "holdout_invariants.json": "572ae70aa174a6a4b130e7994286e5206182619dc1a19d92634879fae038b393",
+    "holdout_metrics.json": "b2217f61b79a2592290a1538b4aba38e00d264032d57f76d590dcfe90982d7d6",
+    "raw_dev_f7c68a51_20260917T103407Z.jsonl": "02195c55d358e2a0ac5d43f28ed6cc15ff93dbbc51342f29c90ded9b17853b38",
+    "raw_holdout_f7c68a51_20260917T103421Z.jsonl": "3c6818f6cbde34d007227b1ddccdb83b6fb4637571f4f0e0353e668093afa6bd",
+    "robustness_checks.py": "a247dbc907f33b2cae58a1fbd1d53ca9b223330c7a07e442a6827482879b1963",
+    "robustness_results.json": "0f8d55f496afb5af49d8130d0837dbcf2a50b45f2350dc39bf279902e9a9a706",
+    "source_and_tie_audit.py": "410e42662726ab2fa64dbe7477b4c9c949acbfbe398ae9b2ebf1f243db51b682",
+    "source_audit.json": "c981a202291aaebd4c49f12d09d463f12f122ce8f3ca18108f92b9747e431648",
+    "verification_report.md": "deada562a138533bb922c61de507c5e7f5010cdcac369cdb4505d90cd9b219e8",
+    "verify_frozen_trace.py": "487e0c22a0a0e912f46b9a41dc7668b2c9fd796969f23647273a284944a609a7"
+  },
+  "review_artifact_sha256": {
+    "AUDIT_OF_AUDIT_V1.md": "59cdc8812e5a7539a07febcb00a45503c8f1f69c20ec5583a78d0bfd1050cc33",
+    "V01_AP_VS_INFORMATION_GAIN_DIAGNOSIS.md": "820d15516c801499cebc594b9f060865d602078eee07a2446bd9d7c624a34970",
+    "V01_CLAIM_BOUNDARY.md": "3be2ff723c82eb5c220f2033e1875facaea8d67e8dea510dab3ffd427968911d",
+    "audit_of_audit_v1.json": "3dc2ec32d55b5c3f4879e1771f03f2c2a6b9e34a8bcbd92a4f571c962045fc24",
+    "audit_of_audit_v1.py": "9ff908a8f630c47d92762d8d8da9a3649aaf359995559c368050362bec11de32",
+    "v01_ap_vs_information_gain_analysis.json": "6089dd5d4df1bafd64ac8262096182a485b4ad243a353d68b8fb851f3ca57851",
+    "v01_ap_vs_information_gain_analysis.py": "68d80d705fa8452168a0585ff93b3ba137ccadda99b60b62a2a3845270d09c2c"
+  },
+  "draft_specification_sha256": {
+    "docs/V02_EXPERIMENT_SPEC_DRAFT.md": "0f05c46e9b8202bf50b03a8a8572fb50781eaaada2daa463c4ff7b01197b688f"
+  },
+  "raw_artifact_permissions": {
+    "raw_dev_f7c68a51_20260917T103407Z.jsonl": "0444",
+    "raw_holdout_f7c68a51_20260917T103421Z.jsonl": "0444"
+  },
+  "v01_verdict_after_review": "PARTIAL"
+}

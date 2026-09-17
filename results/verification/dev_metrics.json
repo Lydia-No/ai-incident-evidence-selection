@@ -1,0 +1,718 @@
+{
+  "ap_minimax_comparisons": {
+    "forced_closure": {
+      "mean_cost_difference_ap_minus_baseline": 1.475,
+      "mean_observations_difference_ap_minus_baseline": 0.9,
+      "premature_closure_rate_difference_ap_minus_baseline": -0.6,
+      "warranted_resolution_rate_difference_ap_minus_baseline": 0.39999999999999997
+    },
+    "information_gain": {
+      "mean_cost_difference_ap_minus_baseline": 0.025000000000000133,
+      "mean_observations_difference_ap_minus_baseline": 0.07500000000000007,
+      "premature_closure_rate_difference_ap_minus_baseline": 0.0,
+      "warranted_resolution_rate_difference_ap_minus_baseline": 0.0
+    },
+    "neutral_all": {
+      "mean_cost_difference_ap_minus_baseline": -1.9249999999999998,
+      "mean_observations_difference_ap_minus_baseline": -0.8749999999999999,
+      "premature_closure_rate_difference_ap_minus_baseline": 0.0,
+      "warranted_resolution_rate_difference_ap_minus_baseline": 0.0
+    },
+    "neutral_discriminating": {
+      "mean_cost_difference_ap_minus_baseline": -0.3999999999999999,
+      "mean_observations_difference_ap_minus_baseline": -0.07499999999999996,
+      "premature_closure_rate_difference_ap_minus_baseline": 0.0,
+      "warranted_resolution_rate_difference_ap_minus_baseline": 0.0
+    }
+  },
+  "by_strategy": {
+    "ap_minimax": {
+      "by_stratum": {
+        "clean_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "confusable_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 2.5,
+          "mean_observations": 1.5,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 20.0,
+          "total_observations": 12,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "model_gap": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 8,
+          "model_gap_rate": 1.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "MODEL_GAP": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "no_failure": {
+          "case_strategy_runs": 8,
+          "mean_cost": 3.25,
+          "mean_observations": 1.875,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 26.0,
+          "total_observations": 15,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "persistent_ambiguity": {
+          "case_strategy_runs": 8,
+          "mean_cost": 1.625,
+          "mean_observations": 1.125,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "UNRESOLVED": 8
+          },
+          "total_cost": 13.0,
+          "total_observations": 9,
+          "unresolved_count": 8,
+          "unresolved_rate": 1.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        }
+      },
+      "overall": {
+        "case_strategy_runs": 40,
+        "mean_cost": 1.475,
+        "mean_observations": 0.9,
+        "model_gap_count": 8,
+        "model_gap_rate": 0.2,
+        "premature_closure_count": 0,
+        "premature_closure_rate": 0.0,
+        "terminal_state_counts": {
+          "MODEL_GAP": 8,
+          "RESOLVED": 24,
+          "UNRESOLVED": 8
+        },
+        "total_cost": 59.0,
+        "total_observations": 36,
+        "unresolved_count": 8,
+        "unresolved_rate": 0.2,
+        "unsupported_incompatible_selection_count": 0,
+        "warranted_correct_resolution_count": 24,
+        "warranted_correct_resolution_rate": 0.6,
+        "warranted_resolution_count": 24,
+        "warranted_resolution_rate": 0.6
+      }
+    },
+    "forced_closure": {
+      "by_stratum": {
+        "clean_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "confusable_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 8,
+          "premature_closure_rate": 1.0,
+          "terminal_state_counts": {
+            "FORCED_CLOSED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "model_gap": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 8,
+          "model_gap_rate": 1.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "MODEL_GAP": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "no_failure": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 8,
+          "premature_closure_rate": 1.0,
+          "terminal_state_counts": {
+            "FORCED_CLOSED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "persistent_ambiguity": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 8,
+          "premature_closure_rate": 1.0,
+          "terminal_state_counts": {
+            "FORCED_CLOSED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        }
+      },
+      "overall": {
+        "case_strategy_runs": 40,
+        "mean_cost": 0.0,
+        "mean_observations": 0.0,
+        "model_gap_count": 8,
+        "model_gap_rate": 0.2,
+        "premature_closure_count": 24,
+        "premature_closure_rate": 0.6,
+        "terminal_state_counts": {
+          "FORCED_CLOSED": 24,
+          "MODEL_GAP": 8,
+          "RESOLVED": 8
+        },
+        "total_cost": 0.0,
+        "total_observations": 0,
+        "unresolved_count": 0,
+        "unresolved_rate": 0.0,
+        "unsupported_incompatible_selection_count": 0,
+        "warranted_correct_resolution_count": 8,
+        "warranted_correct_resolution_rate": 0.2,
+        "warranted_resolution_count": 8,
+        "warranted_resolution_rate": 0.2
+      }
+    },
+    "information_gain": {
+      "by_stratum": {
+        "clean_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "confusable_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 2.5,
+          "mean_observations": 1.375,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 20.0,
+          "total_observations": 11,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "model_gap": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 8,
+          "model_gap_rate": 1.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "MODEL_GAP": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "no_failure": {
+          "case_strategy_runs": 8,
+          "mean_cost": 2.875,
+          "mean_observations": 1.625,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 23.0,
+          "total_observations": 13,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "persistent_ambiguity": {
+          "case_strategy_runs": 8,
+          "mean_cost": 1.875,
+          "mean_observations": 1.125,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "UNRESOLVED": 8
+          },
+          "total_cost": 15.0,
+          "total_observations": 9,
+          "unresolved_count": 8,
+          "unresolved_rate": 1.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        }
+      },
+      "overall": {
+        "case_strategy_runs": 40,
+        "mean_cost": 1.45,
+        "mean_observations": 0.825,
+        "model_gap_count": 8,
+        "model_gap_rate": 0.2,
+        "premature_closure_count": 0,
+        "premature_closure_rate": 0.0,
+        "terminal_state_counts": {
+          "MODEL_GAP": 8,
+          "RESOLVED": 24,
+          "UNRESOLVED": 8
+        },
+        "total_cost": 58.0,
+        "total_observations": 33,
+        "unresolved_count": 8,
+        "unresolved_rate": 0.2,
+        "unsupported_incompatible_selection_count": 0,
+        "warranted_correct_resolution_count": 24,
+        "warranted_correct_resolution_rate": 0.6,
+        "warranted_resolution_count": 24,
+        "warranted_resolution_rate": 0.6
+      }
+    },
+    "neutral_all": {
+      "by_stratum": {
+        "clean_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "confusable_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 3.875,
+          "mean_observations": 2.25,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 31.0,
+          "total_observations": 18,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "model_gap": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 8,
+          "model_gap_rate": 1.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "MODEL_GAP": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "no_failure": {
+          "case_strategy_runs": 8,
+          "mean_cost": 3.875,
+          "mean_observations": 1.625,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 31.0,
+          "total_observations": 13,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "persistent_ambiguity": {
+          "case_strategy_runs": 8,
+          "mean_cost": 9.25,
+          "mean_observations": 5.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "UNRESOLVED": 8
+          },
+          "total_cost": 74.0,
+          "total_observations": 40,
+          "unresolved_count": 8,
+          "unresolved_rate": 1.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        }
+      },
+      "overall": {
+        "case_strategy_runs": 40,
+        "mean_cost": 3.4,
+        "mean_observations": 1.775,
+        "model_gap_count": 8,
+        "model_gap_rate": 0.2,
+        "premature_closure_count": 0,
+        "premature_closure_rate": 0.0,
+        "terminal_state_counts": {
+          "MODEL_GAP": 8,
+          "RESOLVED": 24,
+          "UNRESOLVED": 8
+        },
+        "total_cost": 136.0,
+        "total_observations": 71,
+        "unresolved_count": 8,
+        "unresolved_rate": 0.2,
+        "unsupported_incompatible_selection_count": 0,
+        "warranted_correct_resolution_count": 24,
+        "warranted_correct_resolution_rate": 0.6,
+        "warranted_resolution_count": 24,
+        "warranted_resolution_rate": 0.6
+      }
+    },
+    "neutral_discriminating": {
+      "by_stratum": {
+        "clean_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "confusable_resolvable": {
+          "case_strategy_runs": 8,
+          "mean_cost": 2.75,
+          "mean_observations": 1.625,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 22.0,
+          "total_observations": 13,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "model_gap": {
+          "case_strategy_runs": 8,
+          "mean_cost": 0.0,
+          "mean_observations": 0.0,
+          "model_gap_count": 8,
+          "model_gap_rate": 1.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "MODEL_GAP": 8
+          },
+          "total_cost": 0.0,
+          "total_observations": 0,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        },
+        "no_failure": {
+          "case_strategy_runs": 8,
+          "mean_cost": 3.875,
+          "mean_observations": 1.625,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "RESOLVED": 8
+          },
+          "total_cost": 31.0,
+          "total_observations": 13,
+          "unresolved_count": 0,
+          "unresolved_rate": 0.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 8,
+          "warranted_correct_resolution_rate": 1.0,
+          "warranted_resolution_count": 8,
+          "warranted_resolution_rate": 1.0
+        },
+        "persistent_ambiguity": {
+          "case_strategy_runs": 8,
+          "mean_cost": 2.75,
+          "mean_observations": 1.625,
+          "model_gap_count": 0,
+          "model_gap_rate": 0.0,
+          "premature_closure_count": 0,
+          "premature_closure_rate": 0.0,
+          "terminal_state_counts": {
+            "UNRESOLVED": 8
+          },
+          "total_cost": 22.0,
+          "total_observations": 13,
+          "unresolved_count": 8,
+          "unresolved_rate": 1.0,
+          "unsupported_incompatible_selection_count": 0,
+          "warranted_correct_resolution_count": 0,
+          "warranted_correct_resolution_rate": 0.0,
+          "warranted_resolution_count": 0,
+          "warranted_resolution_rate": 0.0
+        }
+      },
+      "overall": {
+        "case_strategy_runs": 40,
+        "mean_cost": 1.875,
+        "mean_observations": 0.975,
+        "model_gap_count": 8,
+        "model_gap_rate": 0.2,
+        "premature_closure_count": 0,
+        "premature_closure_rate": 0.0,
+        "terminal_state_counts": {
+          "MODEL_GAP": 8,
+          "RESOLVED": 24,
+          "UNRESOLVED": 8
+        },
+        "total_cost": 75.0,
+        "total_observations": 39,
+        "unresolved_count": 8,
+        "unresolved_rate": 0.2,
+        "unsupported_incompatible_selection_count": 0,
+        "warranted_correct_resolution_count": 24,
+        "warranted_correct_resolution_rate": 0.6,
+        "warranted_resolution_count": 24,
+        "warranted_resolution_rate": 0.6
+      }
+    }
+  },
+  "case_counts_by_stratum": {
+    "clean_resolvable": 8,
+    "confusable_resolvable": 8,
+    "model_gap": 8,
+    "no_failure": 8,
+    "persistent_ambiguity": 8
+  },
+  "definitions": {
+    "cost": "sum of frozen costs for selected probes",
+    "model_gap": "zero independently compatible explanations remain",
+    "observations": "count of non-null selected_probe_id records",
+    "premature_closure": "a cause is selected while the final independently compatible set does not have exactly one ID",
+    "unresolved": "more than one independently compatible explanation remains and no forced closure is applied",
+    "unsupported_incompatible_selection": "selected_cause is not in the final independently compatible set",
+    "warranted_correct_resolution": "warranted_resolution and selected_cause equals hidden_truth_id",
+    "warranted_resolution": "final independently compatible set has exactly one ID and selected_cause is that ID"
+  },
+  "raw_sha256": "02195c55d358e2a0ac5d43f28ed6cc15ff93dbbc51342f29c90ded9b17853b38",
+  "raw_trace": "results/verification/raw_dev_f7c68a51_20260917T103407Z.jsonl",
+  "strategies": [
+    "ap_minimax",
+    "forced_closure",
+    "neutral_all",
+    "neutral_discriminating",
+    "information_gain"
+  ],
+  "trace_records": 315,
+  "unique_cases": 40
+}

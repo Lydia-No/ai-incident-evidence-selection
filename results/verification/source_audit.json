@@ -1,0 +1,31 @@
+{
+  "hidden_metadata_perturbation": {
+    "case_strategy_checks": 4000,
+    "failure_count": 0,
+    "failures": []
+  },
+  "nonanticipation_basis": "All 4321 selected HOLDOUT actions were independently recomputed from only current evidence, current compatible explanations, and currently available probes in holdout_invariants.json; run.py reads actual_outcome only after choose_probe returns.",
+  "scoring_pass_through_basis": "hidden truth metadata is serialized for evaluation but absent from strategies.py and investigator/engine.py; 4000 hidden-metadata perturbations did not change decisions.",
+  "static_source_checks": {
+    "hidden_truth_token_in_investigator_engine": false,
+    "hidden_truth_token_in_strategy_module": false,
+    "run_module_hidden_truth_occurrences_are_trace_serialization": [
+      50,
+      51,
+      131,
+      132
+    ],
+    "suspicious_expected_output_literals_found": {
+      "assert result ==": false,
+      "expected_output": false,
+      "gold_answer": false,
+      "hardcoded": false
+    }
+  },
+  "tie_rank_usage": {
+    "ap_minimax_worst_case_and_cost_ties_resolved_by_neutral_rank": 190,
+    "information_gain_and_cost_ties_resolved_by_neutral_rank": 119,
+    "neutral_all_choices_defined_by_neutral_rank": 1602,
+    "neutral_discriminating_choices_defined_by_neutral_rank": 1059
+  }
+}

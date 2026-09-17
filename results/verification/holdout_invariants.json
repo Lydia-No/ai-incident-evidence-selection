@@ -1,0 +1,16 @@
+{
+  "all_trace_invariants_pass": true,
+  "checks_performed": {
+    "compatibility_recomputations": 6321,
+    "independent_probe_choice_checks": 4321,
+    "post_reveal_compatibility_recomputations": 4321,
+    "selected_probe_availability_checks": 4321,
+    "terminal_no_change_checks": 2000
+  },
+  "error_count": 0,
+  "errors": [],
+  "represented_hidden_truth_compatibility": {
+    "failures": 0,
+    "states_checked": 10142
+  }
+}

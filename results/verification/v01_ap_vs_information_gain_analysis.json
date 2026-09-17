@@ -1,0 +1,135 @@
+{
+  "case_comparison": {
+    "by_stratum": {
+      "clean_resolvable": {
+        "ap_total_cost": 0.0,
+        "ap_total_observations": 0,
+        "cases": 100,
+        "ig_total_cost": 0.0,
+        "ig_total_observations": 0,
+        "same_first_action": 100,
+        "same_full_probe_sequence": 100,
+        "same_terminal_state": 100
+      },
+      "confusable_resolvable": {
+        "ap_total_cost": 1005.0,
+        "ap_total_observations": 553,
+        "cases": 400,
+        "ig_total_cost": 992.0,
+        "ig_total_observations": 533,
+        "same_first_action": 362,
+        "same_full_probe_sequence": 362,
+        "same_terminal_state": 400
+      },
+      "model_gap": {
+        "ap_total_cost": 0.0,
+        "ap_total_observations": 0,
+        "cases": 100,
+        "ig_total_cost": 0.0,
+        "ig_total_observations": 0,
+        "same_first_action": 100,
+        "same_full_probe_sequence": 100,
+        "same_terminal_state": 100
+      },
+      "no_failure": {
+        "ap_total_cost": 302.0,
+        "ap_total_observations": 185,
+        "cases": 100,
+        "ig_total_cost": 291.0,
+        "ig_total_observations": 167,
+        "same_first_action": 69,
+        "same_full_probe_sequence": 69,
+        "same_terminal_state": 100
+      },
+      "persistent_ambiguity": {
+        "ap_total_cost": 191.0,
+        "ap_total_observations": 111,
+        "cases": 100,
+        "ig_total_cost": 202.0,
+        "ig_total_observations": 111,
+        "same_first_action": 90,
+        "same_full_probe_sequence": 90,
+        "same_terminal_state": 100
+      }
+    },
+    "cases": 800,
+    "cost_relation": {
+      "AP_higher": 31,
+      "AP_lower": 23,
+      "equal": 746
+    },
+    "observation_relation": {
+      "AP_higher": 38,
+      "equal": 762
+    },
+    "same_first_action": 721,
+    "same_full_probe_sequence": 721,
+    "same_terminal_state": 800
+  },
+  "divergent_initial_choices": {
+    "count": 79,
+    "immediate_probe_cost_relation": {
+      "AP_lower": 58,
+      "equal": 21
+    },
+    "partition_transition_counts": {
+      "confusable_resolvable/(2, 2)->(1, 1, 2)": 38,
+      "no_failure/(2, 2)->(1, 1, 2)": 31,
+      "persistent_ambiguity/(2, 2)->(1, 1, 2)": 10
+    },
+    "realized_residual_counts": {
+      "AP=2/IG=1": 38,
+      "AP=2/IG=2": 41
+    }
+  },
+  "generator_properties": {
+    "clean_resolvable/unique_survivor_signatures": 100,
+    "confusable_resolvable/unique_survivor_signatures": 400,
+    "initial_compatible_count=0": 100,
+    "initial_compatible_count=1": 100,
+    "initial_compatible_count=3": 200,
+    "initial_compatible_count=4": 400,
+    "model_gap/unique_survivor_signatures": 100,
+    "no_failure/unique_survivor_signatures": 100,
+    "persistent_ambiguity/nonunique_survivor_signatures": 100,
+    "represented_truth_outcomes_checked": 3500,
+    "represented_truth_outcomes_matching_prediction": 3500,
+    "singleton_probe_predictions": 16000
+  },
+  "method_boundary": {
+    "imports_or_calls_experiment_runner": false,
+    "imports_or_calls_frozen_strategies": false,
+    "uses_hidden_truth_to_check_noiseless_realized_outcomes": true,
+    "uses_hidden_truth_to_choose_actions": false
+  },
+  "objective_comparison_on_realized_public_states": {
+    "available_probe_partition_patterns": {
+      "2_survivors/1,1": 531,
+      "2_survivors/2": 535,
+      "3_survivors/1,1,1": 239,
+      "3_survivors/1,2": 784,
+      "3_survivors/3": 29,
+      "4_survivors/1,1,2": 259,
+      "4_survivors/1,3": 907,
+      "4_survivors/2,2": 563,
+      "4_survivors/4": 271
+    },
+    "by_survivor_count": {
+      "2_survivors/same": 267,
+      "3_survivors/same": 213,
+      "4_survivors/different": 79,
+      "4_survivors/same": 321
+    },
+    "choice_relation": {
+      "different_choice": 79,
+      "same_choice": 801
+    },
+    "unique_states": 880
+  },
+  "probe_cost_distribution": {
+    "1.0": 1319,
+    "2.0": 1350,
+    "3.0": 1331
+  },
+  "scope": "existing frozen case definitions plus preserved raw trace; no holdout execution"
+}

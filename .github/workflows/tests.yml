@@ -3,6 +3,7 @@ name: tests
 on:
   push:
     branches:
+      - main
       - gate4-clean-implementation
       - gate5-frozen-experiment
   pull_request:

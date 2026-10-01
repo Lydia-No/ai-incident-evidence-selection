@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - gate4-clean-implementation
+      - gate5-frozen-experiment
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e ".[test]"
+      - run: pytest -q
+      - name: Dev-only end-to-end experiment pipeline
+        run: |
+          python -m experiments.run --mode dev --output /tmp/sprint2-dev.jsonl
+          python -m analysis.recompute /tmp/sprint2-dev.jsonl --output /tmp/sprint2-dev-analysis.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          raw = Path('/tmp/sprint2-dev.jsonl')
+          analysis = Path('/tmp/sprint2-dev-analysis.json')
+          assert raw.exists() and raw.stat().st_size > 0
+          assert analysis.exists() and analysis.stat().st_size > 0
+          result = json.loads(analysis.read_text(encoding='utf-8'))
+          assert 'h1' in result
+          assert 'h2' in result
+          assert 'trajectory' in result
+          PY

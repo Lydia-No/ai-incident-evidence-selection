@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it using the metadata below. For the original Apart Research Sprint submission, see CITATION.bib."
+title: "What Should We Check Next? An Auditable Ambiguity-Preserving Investigator for AI Incidents"
+type: software
+authors:
+  - family-names: Thorstensen
+    given-names: Linda
+    orcid: "https://orcid.org/0009-0008-1588-7309"
+year: 2026
+repository-code: "https://github.com/Lydia-No/ai-incident-evidence-selection"
+url: "https://apartresearch.com/sprints/projects/what-should-we-check-next-testing-ambiguitypreserving-evidence-selection-for-ai-incident-investigation-5nv4"
+abstract: >-
+  Reproducibility and research artifact for an ambiguity-preserving AI incident
+  investigator that maintains compatible explanations, exposes unresolved and
+  model-gap states, and selects discriminating evidence checks using a frozen,
+  auditable rule. The repository contains the implementation, frozen synthetic
+  evaluation, provenance, verification materials, and a source-bounded
+  real-incident operational handoff.
+keywords:
+  - AI incident response
+  - incident investigation
+  - active diagnosis
+  - ambiguity preservation
+  - evidence selection
+  - reproducibility
